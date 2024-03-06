@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--
+    - primary meta tags
+  -->
+  <title>Frontend Mentor | Multi-step form</title>
+  <meta name="title" description="Frontend Mentor | Multi-step form">
+  <meta name="description" content="">
+  <!--
+    - favicon
+  -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--
+    - google icon link
+  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--
+    - google icon link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/app.js" defer></script>
+    <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="main">
+    <!-- Sidebar start -->
+    <header class="sidebar">
+      <ul class="steps-list">
+        <li class="step">
+          <span class="step-number" data-step>1</span>
+          <div class="wrapper">
+            <span class="subtitle">Step1</span>
+            <h3 class="step-title">Your info</h3>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" data-step>2</span>
+          <div class="wrapper">
+            <span class="subtitle">Step2</span>
+            <h3 class="step-title">Select plan</h3>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" data-step>3</span>
+          <div class="wrapper">
+            <span class="subtitle">Step3</span>
+            <h3 class="step-title">Add-ons</h3>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-number" data-step>4</span>
+          <div class="wrapper">
+            <span class="subtitle">Step4</span>
+            <h3 class="step-title">Summary</h3>
+          </div>
+        </li>
+      </ul>
+    </header>
+  <!-- Sidebar end -->
+  <!-- Step 1 start -->
+    <div class="slider">
+      <ul class="slider-list" data-slider-container>
+        <li class="card">
+          <div class="wrapper">
+            <h2 class="card-title">Personal info<h2/>
+            <p class="card-text">Please provide your name, email address, and phone number.</p>
+          </div>
+          <div class="card-content">
+            <div class="input-wrapper">
+              <div class="input-label">
+                <span class="input-name">Name</span>
+                <span class="input-alert" data-input-alert>This field is required</span>
+              </div>
+              <input type="text" class="input-field" placeholder="e.g. Stephen King" data-input-field>
+            </div>
+            <div class="input-wrapper">
+              <div class="input-label">
+                <span class="input-name">Email Address</span>
+                <span class="input-alert" data-input-alert>This field is required</span>
+              </div>
+              <input type="email" class="input-field" placeholder="e.g. stephenking@lorem.com" data-input-field>
+            </div>
+            <div class="input-wrapper">
+              <div class="input-label">
+                <span class="input-name">Phone Number</span>
+                <span class="input-alert" data-input-alert>This field is required</span>
+              </div>
+              <input type="number" class="input-field" placeholder="e.g. +1 234 567 890" data-input-field>
+            </div>
+          </div>
+        </li>
+        <!-- Step 1 end -->
+        <!-- Step 2 start -->
+        <li class="card">
+          <div class="wrapper">
+            <h2 class="card-title">Select your plan<h2/>
+            <p class="card-text">You have the option of monthly or yearly billing.</p>
+          </div>
+          <ul class="plans-list">
+            <input type="radio" name="plan" id="1" data-choose-plan checked>
+            <li class="card">
+              <label for="1">
+                <div class="input-wrapper">
+                  <img src="assets/images/icon-arcade.svg" alt="plan logo" class="logo" width="45" height="45">
+                  <div>
+                    <h4 class="plan-title" data-plan-title>Arcade</h4>
+                    <span class="plan-price" data-plan>$9/mo</span>
+                    <span class="yearly-gift" data-yearly-gift>2 months free</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <input type="radio" name="plan" id="2" data-choose-plan>
+            <li class="card">
+              <label for="2">
+                <div class="input-wrapper">
+                  <img src="assets/images/icon-advanced.svg" alt="plan logo" class="logo" width="45" height="45">
+                  <div>
+                    <h4 class="plan-title" data-plan-title>Advanced</h4>
+                    <span class="plan-price" data-plan>$12/mo</span>
+                    <span class="yearly-gift" data-yearly-gift>2 months free</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <input type="radio" name="plan" id="3" data-choose-plan>
+            <li class="card">
+              <label for="3">
+                <div class="input-wrapper">
+                  <img src="assets/images/icon-pro.svg" alt="plan logo" class="logo" width="45" height="45">
+                  <div>
+                    <h4 class="plan-title" data-plan-title>Pro</h4>
+                    <span class="plan-price" data-plan>$15/mo</span>
+                    <span class="yearly-gift" data-yearly-gift>2 months free</span>
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+          <div class="plan-toggler">
+              <span class="monthly">monthly</span>
+              <input type="checkbox" id="4" data-plan-toggler>
+              <label for="4" class="switcher"></label>
+              <span class="yearly">yearly</span>
+          </div>
+        </li>
+        <!-- Step 2 end -->
+        <!-- Step 3 start -->
+        <li class="card">
+          <div class="wrapper">
+            <h2 class="card-title">Pick add-ons<h2/>
+            <p class="card-text">Add-ons help enhance your gaming experience.</p>
+          </div>
+          <ul class="add-ons-list">
+            <input type="checkbox" id="5" data-add-ons-card>
+            <li class="card" id="10">
+              <label for="5">
+                <div class="input-wrapper">
+                <span class="checkbox"></span>
+                <div>
+                  <h4 class="card-title" data-card-title>Online service</h4>
+                  <p class="card-text">Access to multiplayer games</p>
+                </div>
+                <span class="card-price" data-card-price>+$1/mo</span>
+                </div>
+              </label>
+            </li>
+            <input type="checkbox" id="6" data-add-ons-card>
+            <li class="card" id="11">
+              <label for="6">
+                <div class="input-wrapper">
+                  <span class="checkbox"></span>
+                <div>
+                  <h4 class="card-title" data-card-title>Larger storage</h4>
+                  <p class="card-text">Extra 1TB of cloud save</p>
+                </div>
+                <span class="card-price" data-card-price>+$2/mo</span>
+                </div>
+              </label>
+            </li>
+            <input type="checkbox" id="7" data-add-ons-card>
+            <li class="card" id="12">
+              <label for="7">
+                <div class="input-wrapper">
+                  <span class="checkbox"></span>
+                  <div>
+                    <h4 class="card-title" data-card-title>Customizable Profile</h4>
+                    <p class="card-text">Custom theme on your profile</p>
+                  </div>
+                  <span class="card-price" data-card-price>+$2/mo</span>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </li>
+        <!-- Step 3 end -->
+        <!-- Step 4 start -->
+        <li class="card">
+          <div class="wrapper">
+            <h2 class="card-title">Finishing up<h2/>
+            <p class="card-text">Double-check everything looks OK before confirming.</p>
+          </div>
+          <div class="plan-summary">
+            <div class="wrapper">
+              <div>
+                <h4 class="title" data-plan-type>Arcade(Monthly)</h4>
+                <button class="reset-plan" data-reset-plan>change</button>
+              </div>
+              <span class="price" data-price>$0/mo</span>
+            </div>
+            <ul class="add-ons-list" data-add-ons-list>
+            </ul>
+          </div>
+          <div class="total">
+            <span class="total-text" data-total-type>total (per month)</span>
+            <span class="total-price" data-total-price>$0/mo</span>
+          </div>
+        </li>
+        <!-- Step 4 end -->
+        <!-- Step 5 start -->
+        <li class="card">
+          <div class="card-banner">
+            <img src="assets/images/icon-thank-you.svg" width="60" height="60">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Thank you!</h2>
+            <p class="card-text">Thanks for confirming your subscription! We hope you have fun 
+              using our platform. If you ever need support, please feel free 
+              to email us at support@loremgaming.com.</p>
+          </div>
+        </li>
+        <!-- Step 5 end -->
+      </ul>
+    </div>
+  <div class="button-wrapper">
+    <button class="prev-btn" data-prev-btn>Go Back</button>
+    <button class="btn btn-primary" data-next-btn>Next Step</button>
+  </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</body>
+</html>
