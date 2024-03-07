@@ -491,26 +491,51 @@ input[type="checkbox"] {
     left: 340px;
     right: 50px;
   }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 @media (min-width: 992px) {
-  body { padding-inline: 150px; }
-  .main { gap: 80px; }
-  .slider {
-  padding-inline-end: 80px;
+  body {
+    padding-inline: 150px;
   }
-  .slider .slider-list { gap: 80px; }
+  .main {
+    gap: 80px;
+  }
+  .slider {
+    padding-inline-end: 80px;
+  }
+  .slider .slider-list {
+    gap: 80px;
+  }
   .button-wrapper {
     left: 370px;
     right: 80px;
   }
 }
 @media (min-width: 1200px) {
-  body { padding-inline: 180px; }
+  body {
+    padding-inline: 180px;
+  }
 }
 @media (min-width: 1440px) {
-  body { padding-inline: 300px; }
-  .main { gap: 120px; }
-  .slider .slider-list { gap: 100px; }
+  body {
+    padding-inline: 300px;
+  }
+  .main {
+    gap: 120px;
+  }
+  .slider .slider-list {
+    gap: 100px;
+  }
   .button-wrapper {
     left: 390px;
     right: 100px;
